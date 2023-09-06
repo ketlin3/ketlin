@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meu Cabeçalho</title>
+</head>
+<body>
+    <header id="myHeader">
+        <h1>TDS</h1>
+        TÉCNICO DESENVOLVIMENTO DE SISTEMAS 
+        <nav>
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Dúvidas?</a></li>
+                <li><a href="#">Cursos</a></li>
+              
+            </ul>
+    </header>
+
+    <script>
+        // JavaScript para exibir um alerta quando o título é clicado
+        const header = document.getElementById("myHeader");
+        header.addEventListener("click", function () {
+            alert("Cabeçalho clicado!");
+        });
+
+    </script>
+</body>
+</html>
+
+CSS
+/* Estilos para o cabeçalho */
+body{
+  margin: 0%;
+}
+header {
+    background-color: rgb(129, 100, 175);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    transition: background-color 0.3s;
+}
+    background-color: #0056b3;/* CSS no arquivo styles.css */
+.meu-botao {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.meu-botao:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+    color: #fff;
+}
+
+
+header:hover {
+    background-color: rgb(60, 9, 199);
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    
+   
+}
+
+JS
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meu Cabeçalho</title>
+</head>
+<body>
+    <header id="myHeader">
+        <h1>Meu Título</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        // JavaScript para alterar o texto do título quando clicado
+        const header = document.getElementById("myHeader");
+        const titulo = header.querySelector("h1");
+
+        titulo.addEventListener("click", function () {
+            const novoTexto = prompt("Digite um novo título:");
+            if (novoTexto !== null) {
+                titulo.textContent = novoTexto;
+            }
+        });
+    </script>
+</body>
+</html>
